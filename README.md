@@ -14,6 +14,27 @@ classDiagram
 
 # Implementação
 
+## Main.java
+
+```
+
+public class Main {
+    public static void main(String[] args) {
+        CalculoMedia gradesCalc = new CalculoMedia();
+        gradesCalc.setNotas(4);
+        float avarege = gradesCalc.getAvarege();
+        System.out.printf("A média do aluno é: %.2f\n", avarege);
+        if(avarege >= 7){
+            System.out.println("Aluno Aprovado!");
+        }else if(avarege >=5){
+             System.out.println("Aluno em Recuperação!");
+        }else{
+            System.out.println("Aluno em Reprovado!");
+        }
+     }
+}
+```
+
 ## CalculoMedia.java
 
 ```
@@ -55,18 +76,5 @@ public class CalculoMedia {
         }
         return sum/notas.size();
     }
-}
-```
-
-## Main.java
-
-```
-
-public class Main {
-    public static void main(String[] args) {
-        CalculoMedia gradesCalc = new CalculoMedia();
-        gradesCalc.setNotas(4);
-        System.out.printf("A média é: %.2f", gradesCalc.getAvarege());
-     }
 }
 ```
