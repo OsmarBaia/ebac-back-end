@@ -1,22 +1,3 @@
-# Diagramação
-
-```mermaid
-classDiagram
-    class CalculoMedia {
-        - sc: Scanner
-        - notas: List<Float>
-        + CalculoMedia()
-        + setNotas(amount: int): void
-        + inserNota(nota: float): void
-        + getAvarege(): float
-    }
-```
-
-# Implementação
-
-## CalculoMedia.java
-
-```
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -56,17 +37,3 @@ public class CalculoMedia {
         return sum/notas.size();
     }
 }
-```
-
-## Main.java
-
-```
-
-public class Main {
-    public static void main(String[] args) {
-        CalculoMedia gradesCalc = new CalculoMedia();
-        gradesCalc.setNotas(4);
-        System.out.printf("A média é: %.2f", gradesCalc.getAvarege());
-     }
-}
-```
