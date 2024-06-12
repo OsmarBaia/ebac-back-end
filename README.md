@@ -31,11 +31,11 @@ class IIdentidade {
     + getNumIdentificacao() : String
     + apresentar() : void
     + getNome () : String
-    + String setNome : void
-    + String getEndereco: String
-    + String setEndereco: void
-    + String getnumIdentificacao: String
-    + setnumIdentificacaov
+    + setNome (nome : String) : void
+    + String getEndereco() : String
+    + setEndereco (endereco : String): void
+    + getnumIdentificacao () : String
+    + setnumIdentificacaov(identificacao : String)
   }
   class PessoaFisica {
 + PessoaFisica(String, String, String)
