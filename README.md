@@ -1,6 +1,7 @@
 # Collections 2
 
 ## Implementação
+```
 import java.util.*;
 
 public class Main {
@@ -65,3 +66,4 @@ public class Main {
         sc.close();
     }
 }
+```
