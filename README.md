@@ -28,26 +28,28 @@ class IIdentidade {
     - String nome
     - String endereco
     + setNumIdentificacao(String) : Void
-    + getNumIdentificacao() : String
-    + apresentar() : void
+    + getNumIdentificacao() : String    
     + getNome () : String
     + setNome (nome : String) : void
     + String getEndereco() : String
     + setEndereco (endereco : String): void
     + getnumIdentificacao () : String
     + setnumIdentificacaov(identificacao : String)
+    + apresentar() : void
   }
   class PessoaFisica {
-+ PessoaFisica(String, String, String)
-+ apresentar() void
-+ setNumIdentificacao(String) String
-  String numIdentificacao
+    - String cpf
+    + PessoaFisica(String, String, String)    
+    + getnumIdentificacao () : String
+    + setnumIdentificacaov(identificacao : String)
+    + apresentar() : void
   }
   class PessoaJuridica {
-+ PessoaJuridica(String, String, String)
-+ setNumIdentificacao(String) String
-+ apresentar() void
-  String numIdentificacao
+    - String cnpj
+    + PessoaJuridica(String, String, String)    
+    + getnumIdentificacao () : String
+    + setnumIdentificacaov(identificacao : String)
+    + apresentar() : void
   }
 
 Pessoa  ..>  IEndereco
