@@ -7,21 +7,18 @@ public class PessoaFisica extends Pessoa{
         this.cpf = cpf;
     }
 
-    // Getter e Setter específico
-    public String getCpf() {
-        return cpf;
-    }
-
-    public void setCpf(String cpf) {
-        this.cpf = cpf;
-    }
-
-    public void pagarImpostos() {
-        System.out.println(getNome() + " está pagando impostos como Pessoa Física.");
-    }
-
     @Override
     public void apresentar() {
         System.out.println("Olá, eu sou " + getNome() + " e sou uma Pessoa Física.");
+    }
+
+    @Override
+    public String getNumIdentificacao(){
+        return this.cpf;
+    }
+
+    @Override
+    public String setNumIdentificacao(String identificacao){
+        return this.cpf;
     }
 }

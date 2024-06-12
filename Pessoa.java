@@ -1,4 +1,4 @@
-abstract class Pessoa {
+abstract class Pessoa implements IIdentidade, IEndereco {
     private String nome;
     private String endereco;
 
@@ -6,21 +6,23 @@ abstract class Pessoa {
         this.nome = nome;
         this.endereco = endereco;
     }
-
-    public String getNome() {
-        return nome;
-    }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getEndereco() {
-        return endereco;
+    public String getNome() {
+        return this.nome;
     }
+
+    public abstract String setNumIdentificacao(String identificacao);
+    public abstract String getNumIdentificacao();
 
     public void setEndereco(String endereco) {
         this.endereco = endereco;
+    }
+
+    public String getEndereco() {
+        return this.endereco;
     }
 
     public abstract void apresentar();
