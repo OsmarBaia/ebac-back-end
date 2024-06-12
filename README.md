@@ -3,20 +3,27 @@
 ```mermaid
 classDiagram
 direction BT
+
 class IEndereco {
 <<Interface>>
-String endereco
++setEndereco(endereco : String)
++getEndereco() : String
 }
+
 class IIdentidade {
 <<Interface>>
-+ setNumIdentificacao(String) String
-  String nome
++ setNumIdentificacao(num: String) 
++ getNumIdentificacao() : String
++ setNome(name : String)
++ getNome() : String
   String numIdentificacao
   }
+
   class Main {
 + Main()
 + main(String[]) void
   }
+
   class Pessoa {
 + Pessoa(String, String)
 - String nome
